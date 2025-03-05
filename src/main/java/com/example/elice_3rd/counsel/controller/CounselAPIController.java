@@ -68,10 +68,4 @@ public class CounselAPIController {
                                                                        @PageableDefault(sort = "createdDate", direction = Sort.Direction.DESC) Pageable pageable){
         return ResponseEntity.ok(counselService.retrieveMyCounsels(principal.getName(), pageable));
     }
-
-    // TODO SRP 위배 진료과 컨트롤러 따로 구현하기
-    @GetMapping("/category")
-    public ResponseEntity<List<Category>> retrieveAllCategory(){
-        return ResponseEntity.ok(categoryService.findAll());
-    }
 }

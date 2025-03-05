@@ -74,7 +74,6 @@ public class JwtFilter extends OncePerRequestFilter {
         String name = jwtUtil.getName(accessToken);
         Boolean isOauth = jwtUtil.isOauth(accessToken);
 
-        // TODO memberRepository 안쓰기
         MemberDetail memberDetail = MemberDetail.builder()
                 .email(email)
                 .role(role)

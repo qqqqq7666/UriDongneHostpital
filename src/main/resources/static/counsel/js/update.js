@@ -24,7 +24,7 @@ function renderSubject(data){
   })
 }
 
-api.get("/counsels/category")
+api.get("/category")
   .then(response => {
     console.log(response);
     renderSubject(response.data)
