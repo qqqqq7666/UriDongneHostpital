@@ -2,21 +2,13 @@ package com.example.elice_3rd.counsel.controller;
 
 import com.example.elice_3rd.comment.service.CommentService;
 import com.example.elice_3rd.counsel.service.CounselService;
-import com.example.elice_3rd.member.service.MemberService;
-import com.example.elice_3rd.security.CustomUserDetails;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.authentication.InsufficientAuthenticationException;
-import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.security.Principal;
 
 @Controller
 @RequiredArgsConstructor

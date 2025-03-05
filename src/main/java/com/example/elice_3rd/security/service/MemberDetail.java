@@ -1,4 +1,4 @@
-package com.example.elice_3rd.security;
+package com.example.elice_3rd.security.service;
 
 import lombok.*;
 

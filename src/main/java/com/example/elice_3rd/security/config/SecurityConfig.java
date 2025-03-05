@@ -1,6 +1,8 @@
-package com.example.elice_3rd.security;
+package com.example.elice_3rd.security.config;
 
 import com.example.elice_3rd.member.repository.MemberRepository;
+import com.example.elice_3rd.security.CustomLogoutFilter;
+import com.example.elice_3rd.security.LoginFilter;
 import com.example.elice_3rd.security.jwt.JwtFilter;
 import com.example.elice_3rd.security.jwt.JwtUtil;
 import com.example.elice_3rd.security.oauth2.CustomOAuth2UserService;

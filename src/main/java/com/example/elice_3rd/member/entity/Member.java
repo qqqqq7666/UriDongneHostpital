@@ -3,7 +3,7 @@ package com.example.elice_3rd.member.entity;
 import com.example.elice_3rd.common.BaseEntity;
 import com.example.elice_3rd.member.dto.MemberResponseDto;
 import com.example.elice_3rd.member.dto.MemberUpdateDto;
-import com.example.elice_3rd.security.MemberDetail;
+import com.example.elice_3rd.security.service.MemberDetail;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

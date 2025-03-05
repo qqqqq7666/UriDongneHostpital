@@ -1,7 +1,7 @@
 package com.example.elice_3rd.security.jwt;
 
-import com.example.elice_3rd.security.CustomUserDetails;
-import com.example.elice_3rd.security.MemberDetail;
+import com.example.elice_3rd.security.service.CustomUserDetails;
+import com.example.elice_3rd.security.service.MemberDetail;
 import io.jsonwebtoken.ExpiredJwtException;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

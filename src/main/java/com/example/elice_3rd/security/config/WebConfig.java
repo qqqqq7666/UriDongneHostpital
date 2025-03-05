@@ -1,5 +1,6 @@
-package com.example.elice_3rd.security.oauth2;
+package com.example.elice_3rd.security.config;
 
+import com.example.elice_3rd.security.oauth2.LoginMemberArgumentResolver;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
