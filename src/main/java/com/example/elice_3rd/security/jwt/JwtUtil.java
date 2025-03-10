@@ -71,21 +71,12 @@ public class JwtUtil {
         Date now = new Date(System.currentTimeMillis());
         Date expireDate = new Date(now.getTime() + refreshExpirationTime);
 
-        String refreshToken = Jwts.builder()
+        return Jwts.builder()
                 .setClaims(claims)
                 .setIssuedAt(now)
                 .setExpiration(expireDate)
                 .signWith(key, SignatureAlgorithm.HS256)
                 .compact();
-
-//        redisTemplate.opsForValue().set(
-//                authentication.getName(),
-//                refreshToken,
-//                refreshExpirationTime,
-//                TimeUnit.MILLISECONDS
-//        );
-
-        return refreshToken;
     }
 
     public String getEmail(String token) {
